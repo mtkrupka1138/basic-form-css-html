@@ -1,0 +1,224 @@
+/*****************
+GENERAL
+******************/
+
+body {
+  color: #fff; 
+  background-color: rgb(43, 64, 85);
+}
+
+
+/*****************
+HEADING
+******************/
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 12px;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.header-rule {
+  border-top: 0.5% solid white;
+  width: 18%; 
+  margin: 5px auto;
+}
+
+
+/*****************
+FORM
+******************/
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+h2 {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.line {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+input.u-full-width, 
+select {
+  color: #fff solid;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  height: 40px;
+  padding: 6px 10px;
+  margin-bottom: 1.5rem;
+  background-color: rgb(43, 64, 85);
+  display: inline-block;
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 1px;
+  border: 1px solid #fff;
+  cursor: auto;
+  box-sizing: border-box; 
+}
+
+select[type="state"] {
+  background: url('images/arrow.png') no-repeat;
+  background-position: 85% 50%;
+  background-size: 15px 10px;
+  -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+}
+
+.button-primary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-top: 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  white-space: normal;
+  width: 100%;
+  color: #fff;
+  background-color: #3CB371;
+  background: #3CB371 url('images/arrow2.png') no-repeat;
+  background-position: 50% 30%;
+  background-size: 30px 5px;
+  border: 1px solid;
+  border-color: #3CB371; 
+  cursor: pointer;
+}
+input.button-primary:hover {
+  color: #fff;
+  background-color: #2d8655;
+  border-color: #2d8655; 
+}
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/*****************
+RESPONSIVENESS
+******************/
+
+/* For devices smaller than 480px */
+@media (max-width: 550px) {
+  .container {
+    width: 75%;
+    padding: 0; }
+
+  select[type="state"] {
+    background: url('images/arrow.png') no-repeat;
+    background-position: 95% 50%;
+    background-size: 15px 10px;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+	  appearance: none;
+    }
+
+  .button-primary {
+    background: #3CB371 url('images/arrow2.png') no-repeat;
+    background-position: 50% 30%;
+    background-size: 30px 5px;
+   }
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+}
+
+/*****************
+FOOTER
+******************/
+
+footer {
+  color: rgb(43, 64, 85);
+  text-shadow: 	-1px -1px 0 #fff,
+		            1px -1px 0 #fff,
+		            -1px 1px 0 #fff,
+		            1px 1px 0 #fff;
+  padding-bottom: 20px;
+}
+
+h1.footer {
+  position: relative;
+  height: 40px;
+  font-size: 32px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.footer-rule {
+  position: relative;
+  margin: 0 auto;
+  border-top: 0.25px #fff;
+  width: 35px; 
+  margin-bottom: 20px;
+}
